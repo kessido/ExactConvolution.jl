@@ -16,7 +16,7 @@
 
 export array2bigint, bigint2array
 
-function array2bigint(arr::Vector{T}, num_bits_per_item::Int) where {T<:Integer}
+function array2bigint(arr::Vector{T}, num_bits_per_item) where {T<:Integer}
     @assert all(>=(0), arr)
 
     @assert num_bits_per_item % 5 == 0
@@ -44,7 +44,7 @@ function array2bigint(arr::Vector{T}, num_bits_per_item::Int) where {T<:Integer}
 end
 
 
-function bigint2array(::Type{T}, bi::BigInt, n::Int, num_bits_per_item::Int)::Vector{T} where {T <: Integer}
+function bigint2array(::Type{T}, bi::BigInt, n, num_bits_per_item)::Vector{T} where {T <: Integer}
     @assert num_bits_per_item % 5 == 0
     num_char_per_item = num_bits_per_item ÷ 5
 

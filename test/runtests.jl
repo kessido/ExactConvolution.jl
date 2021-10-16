@@ -1,7 +1,7 @@
 using ExactConvolution
 using Test
 
-function naive_array2bigint(arr, num_bits::Int)
+function naive_array2bigint(arr, num_bits)
 	@assert all(>=(0), arr)
 	ans = BigInt(0)
 	for i ∈ reverse(arr)

@@ -43,7 +43,7 @@ julia> exact_conv(Int32, [1,2], [4,5,6])
 """
 function exact_conv end
 
-exact_conv(a, b) = exact_conv(Int, a, b)
+exact_conv(a, b) = exact_conv(Int64, a, b)
 
 function exact_conv(
     ::Type{T},
