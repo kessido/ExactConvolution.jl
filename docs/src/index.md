@@ -12,3 +12,7 @@ Documentation for [ExactConvolution](https://github.com/kessido/ExactConvolution
 ```@autodocs
 Modules = [ExactConvolution]
 ```
+
+```@docs
+exact_conv
+```
