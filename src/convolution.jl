@@ -34,7 +34,6 @@ Convolve arrays of integers `a` and `b`, and return the resulting array.
 
 # Examples
 ```jldoctest
-julia> using ExactConvolution
 julia> exact_conv(Int32, [1,2], [4,5,6])
 4-element Vector{Int32}:
   4
