@@ -28,9 +28,9 @@ exact\\_conv(a,b)[k] = \\sum_{i+j=k} a[i] \\cdot b[j]
 ```
 
 # Notes:
-    T must be sufficient to support the result.
-    Using negative values in `a` and `b` is 
-    supported but discouraged for runtime reasons.
+- The implementation uses GMP's BigInt multiplication as the underling DSP engine (FFT for big enough inputs). 
+- T must be sufficient to support the result.
+- Using negative values in `a` and `b` is supported but discouraged for runtime reasons.
 
 # Examples
 ```jldoctest

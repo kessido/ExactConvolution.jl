@@ -3,12 +3,10 @@ CurrentModule = ExactConvolution
 ```
 
 # ExactConvolution
-
-Documentation for [ExactConvolution](https://github.com/kessido/ExactConvolution.jl).
+[ExactConvolution](https://github.com/kessido/ExactConvolution.jl)
 
 ```@index
 ```
-
 ```@autodocs
 Modules = [ExactConvolution]
 ```
