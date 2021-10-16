@@ -1,5 +1,7 @@
 module ExactConvolution
 
-# Write your package code here.
+export exact_conv
+
+include("convolution.jl")
 
 end
