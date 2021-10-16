@@ -23,12 +23,14 @@ include("conversion.jl")
 
 Convolve arrays of integers `a` and `b`, and return the resulting array.
 
-```exact_conv(a,b)[k] = ∑_{i+j=k} a[i] ⋅ b[j]```
+```math
+exact_conv(a,b)[k] = \\sum_{i+j=k} a[i] \\cdot b[j]
+```
 
 # Notes:
-    - T must be sufficient to support the result.
-    - Using negative values in `a` and `b` is 
-      supported but discouraged for runtime reasons.
+    T must be sufficient to support the result.
+    Using negative values in `a` and `b` is 
+    supported but discouraged for runtime reasons.
 
 # Examples
 ```julia
