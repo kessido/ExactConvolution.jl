@@ -18,6 +18,31 @@ export exact_conv
 
 include("conversion.jl")
 
+"""
+    exact_conv([T,] a, b)
+
+Convolve arrays of integers `a` and `b`, and return the resulting array.
+
+``exact_conv(a,b)[k] = ∑_{i+j=k} a[i] \cdot b[j]``
+
+# Notes:
+    - T must be sufficient to support the result.
+    - Using negative values in `a` and `b` is 
+      supported but discouraged for runtime reasons.
+
+# Examples
+```jldoctest
+julia> using ExactConvolution
+julia> exact_conv(Int32, [1,2], [4,5,6])
+4-element Vector{Int32}:
+  4
+ 13
+ 16
+ 12
+```
+"""
+function exact_conv end
+
 exact_conv(a, b) = exact_conv(Int, a, b)
 
 function exact_conv(
