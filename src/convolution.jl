@@ -23,7 +23,7 @@ include("conversion.jl")
 
 Convolve arrays of integers `a` and `b`, and return the resulting array.
 
-``exact_conv(a,b)[k] = ∑_{i+j=k} a[i] \cdot b[j]``
+```exact_conv(a,b)[k] = ∑_{i+j=k} a[i] ⋅ b[j]```
 
 # Notes:
     - T must be sufficient to support the result.
