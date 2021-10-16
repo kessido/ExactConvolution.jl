@@ -31,7 +31,7 @@ Convolve arrays of integers `a` and `b`, and return the resulting array.
       supported but discouraged for runtime reasons.
 
 # Examples
-```jldoctest
+```julia
 julia> using ExactConvolution
 julia> exact_conv(Int32, [1,2], [4,5,6])
 4-element Vector{Int32}:
