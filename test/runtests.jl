@@ -11,7 +11,7 @@ function naive_array2bigint(arr, num_bits::Int)
 	ans
 end
 
-function random_input(;len=300, bits=54, max_bits=100)
+function random_input(;len=300, bits=24, max_bits=100)
 	l = rand(1:len)
 	arr = rand(0:2^bits-1, l)
 	num_bits = rand(bits+1:max_bits)
