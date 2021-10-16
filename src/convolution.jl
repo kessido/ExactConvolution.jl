@@ -24,7 +24,7 @@ include("conversion.jl")
 Convolve arrays of integers `a` and `b`, and return the resulting array.
 
 ```math
-\\text{exact_conv}(a,b)[k] = \\sum_{i+j=k} a[i] \\cdot b[j]
+exact\_conv(a,b)[k] = \\sum_{i+j=k} a[i] \\cdot b[j]
 ```
 
 # Notes:
