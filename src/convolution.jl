@@ -33,7 +33,7 @@ exact_conv(a,b)[k] = \\sum_{i+j=k} a[i] \\cdot b[j]
     supported but discouraged for runtime reasons.
 
 # Examples
-```julia
+```jldoctest
 julia> using ExactConvolution
 julia> exact_conv(Int32, [1,2], [4,5,6])
 4-element Vector{Int32}:
