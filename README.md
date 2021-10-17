@@ -34,10 +34,18 @@ julia> exact_conv(Int128, [big"2"^80, big"5"^42], [4,5,6])
   909500746402026311060912593380
  1136875630771077985168847065181
  1364242052659392356872558593750
- julia> exact_conv(Int8, [1,-2], [4,5,6])
+julia> exact_conv(Int8, [1,-2], [4,5,6])
 4-element Vector{Int8}:
    4
   -3
   -4
  -12
- ```
+julia> using BenchmarkTools
+julia> rand_array(bits) = rand(0:2^bits, 10^5);
+julia> arr1,arr2 = rand_array(20),rand_array(20);
+julia> @btime exact_conv(Int64, arr1, arr2);
+  64.988 ms (600085 allocations: 27.98 MiB)
+julia> using DSP
+julia> conv(arr1, arr2)
+  5.548 ms (94 allocations: 10.69 MiB)
+```
