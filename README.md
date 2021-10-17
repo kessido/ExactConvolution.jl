@@ -8,8 +8,8 @@
 # Installation
 
 # Usage 
-```
-Using ExactConvolution
+```julia
+julia> Using ExactConvolution
 julia> exact_conv(Int32, [1,2], [4,5,6])
 4-element Vector{Int32}:
   4
