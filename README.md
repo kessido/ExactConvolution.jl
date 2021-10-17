@@ -41,5 +41,3 @@ julia> exact_conv(Int128, [big"2"^80, big"5"^42], [4,5,6])
   -4
  -12
  ```
- 
-# Documentation
