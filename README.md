@@ -9,7 +9,7 @@ This package is intended for computing exact convolutions of integers vectors.
 
 It is essentialy a wrapper over GMP's BigInt multiplications, and as such it is very efficient. Convolutions of two Int64 arrays of length 10^5 can take about 90ms, or 180ms if negative values are presented.
 
-For convolutions of integers that floating point computations might be sufficient exact for, it is recommended using [DSP.jl](https://github.com/JuliaDSP/DSP.jl) which can be for some cases 10x fasters.
+For integers that floating point computations might be sufficient exact for, please use [DSP.jl](https://github.com/JuliaDSP/DSP.jl), which for some cases can be 10x faster.
 
 # Installation
 
