@@ -29,7 +29,7 @@ julia> exact_conv(Int16, [1,2], [4,5,6])
  13
  16
  12
-julia> julia> exact_conv(BigInt, [big"2"^80, big"5"^42], [4,5,6])
+julia> exact_conv(BigInt, [big"2"^80, big"5"^42], [4,5,6])
 4-element Vector{BigInt}:
        4835703278458516698824704
   909500746402026311060912593380
